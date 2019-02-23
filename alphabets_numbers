@@ -1,0 +1,9 @@
+# program to count numbers and alphabets in a sentence
+sentence = input("enter sentence ")
+ncount,acount=0,0
+for i in sentence:
+    if i.isalpha():
+        acount = acount+1
+    elif i.isdigit():
+        ncount = ncount+1
+print("number of alphabets = ",acount,"\nnumber of digits = ",ncount)

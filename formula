@@ -1,0 +1,7 @@
+# program to compute the formula q=sqrt(2*c*d)/h
+
+import math
+c = int(input("enter value for c - "))
+d = int(input("enter value for d - "))
+h = int(input("enter value for h - "))
+print("q value after computing formula is = ", (math.sqrt(2 * c * d)) / h)

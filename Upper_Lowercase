@@ -1,0 +1,10 @@
+# program to count number of uppercase & lowercase letters in input sentence
+
+str = input("enter sentence\n")
+lcount, ucount = 0, 0
+for i in str:
+    if i.islower():
+        lcount = lcount + 1
+    elif i.isupper():
+        ucount = ucount + 1
+print("count of uppercase leters = ", ucount, "\nnumber of lowercase letters = ", lcount)

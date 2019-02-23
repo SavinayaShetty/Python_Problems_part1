@@ -1,0 +1,13 @@
+# program to print factorial of n using recursion
+
+n = int(input("enter the number "))
+
+
+def factorial(n):
+    if n == 0:
+        return 1;
+    else:
+        return n * factorial(n - 1)
+
+
+print("factorial of", n, "is,", factorial(n))

@@ -1,0 +1,13 @@
+# print all the numbers between 1000-3000 which has all even digits
+
+for n in range(2000, 3000):
+    temp = n
+    j = 0
+    while j < 4:
+        remainder = n % 10
+        n = n // 10
+        if remainder % 2 != 0:
+            break
+        j = j + 1
+    if j == 4:
+        print(temp)

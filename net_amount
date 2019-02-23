@@ -1,0 +1,15 @@
+# program to print net amount after a set of transaction has taken place
+# NOTE : input is assumed to be a continues string of comma separated transactions
+
+print("enter the transactions in the format d 300,w 200 etc.\n")
+a = list(map(str,input().split(',')))
+bal = 0
+
+for i in range(0, len(a)):
+    str = a[i]
+    if str[0] is 'd':
+        bal = bal + int(str[2:])
+    else:
+        bal = bal - int(str[2:])
+
+print(bal)
